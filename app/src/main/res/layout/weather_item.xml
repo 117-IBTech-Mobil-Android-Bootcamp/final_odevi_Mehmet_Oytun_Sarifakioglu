@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    >
+
+    <ImageView
+        android:id="@+id/cloudImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cloudImage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Lokasyon İsmi"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/localTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Local Time"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/heatF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/localTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Sıcaklık Fahreneit"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/heatC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heatF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Sıcaklık Celceus"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heatC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Hava Durumu"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/feelF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/air"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:text="Hissedilen Fahr."
+        android:textColor="@color/white">
+    </TextView>
+    <TextView
+        android:id="@+id/feelC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feelF"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:text="Hissedilen Celc."
+        android:textColor="@color/white">
+    </TextView>
+    <Button
+        android:id="@+id/toDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feelC"
+        android:text="FOR DETAİL PAGE"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        >
+    </Button>
+
+</RelativeLayout>
